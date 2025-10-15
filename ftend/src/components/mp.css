@@ -1,0 +1,21 @@
+.resn{
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+.it{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.b{
+    color: brown;
+    background-color: beige;
+}
+
+.tt{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: italic;
+    color: brown;
+}

@@ -1,0 +1,86 @@
+body {
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    align-items: center;
+}
+
+.body {
+    margin-top: 0px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color:brown;
+    margin-top: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+
+   
+}
+.bx{
+    color: black;
+    font-size: 40px;
+    margin-top: 5px;
+}
+/* 💥 Add this container */
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    /*flex-wrap: wrap; /* Responsive */
+}
+
+.lcc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🩷 Login box style */
+.log {
+    background-color: wheat;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    border-radius: 15px;
+    width: 300px;
+    margin-top: 50px;
+}
+
+.log h2 {
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.log input {
+    background-color:white;
+    border-radius: 5px;
+}
+
+.log input::placeholder {
+    color: black;
+}
+
+.log button {
+    color: beige;
+    background-color: brown;
+}
+
+
+
+.log a {
+    display: flex;
+    justify-content: center;
+    color: black;
+}

@@ -1,0 +1,53 @@
+body {
+    background-color:wheat;
+}
+.hm {
+    background-color: wheat;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+.ic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Optional: style icons */
+  .ic i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: brown;
+  }
+  
+  /* Optional: time style */
+  .ic h4 {
+    margin-left: auto;
+    font-size: 14px;
+    color: black;
+  }
+  
+#ft{
+  font-family: 'Times New Roman', Times, serif;
+  color: brown;
+}
+
+.cc{
+  background-color: beige;
+}
+
+.resname{
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.it{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
+.dd{
+  size: 2px;
+  color: black;
+}

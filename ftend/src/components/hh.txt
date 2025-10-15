@@ -1,0 +1,90 @@
+import './homepg.css';
+
+function Home() {
+  const cards = [1, 2, 3, 4, 5, 6,7]; 
+
+  return (
+    <div className="hm">
+      <Nav />
+
+      {/* ✅ Flex wrap container */}
+      <div className="flex flex-wrap justify-center gap-x-10 gap-y-10 mt-10">
+        {cards.map((_, index) => (
+          <div key={index} className="w-[300px] bg-white border border-gray-300 rounded-lg shadow-md">
+            <img className="rounded-t-lg" src={img} alt="Tech blog" />
+            <div className="p-5">
+              <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900">
+                Altaf-biriyani
+              </h5>
+              <div className="flex items-center gap-2">
+                <i className='bx bx-heart'></i>
+                <i className='bx bx-message-square-dots'></i>
+                <i className='bx bx-dots-horizontal-rounded'></i>
+                <h4 className="ml-auto text-sm text-gray-500">10 Hours ago..</h4>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Home;
+
+
+import React, { useEffect, useState, useContext } from 'react';
+import Nav from './nav';
+import './homepg.css';
+import API from '../auth'; // Uses your axios instance
+import { AuthContext } from './authcontext'; // Make sure this points to your AuthContext
+
+function Home() {
+  const [reviews, setReviews] = useState([]);
+  const { uid } = useContext(AuthContext); // Get logged-in user ID
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const res = await API.get(`/r/all`);
+        setReviews(res.data.data); // Assuming reviews come in `data.data`
+      } catch (err) {
+        console.error("Failed to fetch reviews:", err);
+      }
+    };
+
+    if (uid) {
+      fetchReviews();
+    }
+  }, [uid]);
+
+  return (
+    <div className="hm">
+      <Nav />
+      <div className="flex flex-wrap justify-center gap-8 mt-10">
+        {reviews.map((review) => (
+          <div
+            key={review._id}
+            className="w-[300px] bg-white border border-gray-300 rounded-lg shadow-md"
+          >
+            <img
+              src={`http://localhost:3000/api/v1/r/image/${review.image}`}
+              alt={review.resname}
+              className="h-[200px] w-full object-cover rounded-t-lg"
+            />
+            <div className="p-5">
+              <h2 className="text-xl font-semibold mb-1">{review.resname}</h2>
+              <p className="text-sm text-gray-600 mb-1">{review.area}, {review.city}</p>
+              <p className="text-gray-700 mb-2 text-sm">{review.reviewContent}</p>
+              <p className="text-xs text-gray-500" id='ft'>Food Tried: {review.food}</p>
+
+              
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Home;

@@ -1,0 +1,43 @@
+
+.sc {
+    position: fixed;
+    top: 61px;          
+    right:0;       
+    height: 400px;  
+    width: 250px;   
+    background-color: burlywood; 
+    border: 3px solid brown;  
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 1000;
+    padding: 10px;  
+    gap:3px;
+}
+
+/* Button styles */
+.btnn {
+    border: 2px solid brown;
+    border-radius: 5px;
+    height: 50px;
+    background-color:beige;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center; /* Ensure icons and text are centered */
+}
+
+/* Icon style */
+i {
+    color: brown;
+    font-size: 20px;
+}
+
+.hh{
+    display: flex;
+    justify-content:center;
+    gap:15px;
+    
+}

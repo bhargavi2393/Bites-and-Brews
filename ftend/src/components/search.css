@@ -1,0 +1,123 @@
+.con{
+
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+}
+
+h3{
+    font-size: 30px;
+    color: brown;
+    display: flex;
+    justify-content: center;
+}
+.ss{
+     margin-left:100px;
+    display: flex;
+    gap:15px;
+    justify-content: center;
+   
+}
+.sss{
+    border: 2px solid brown;
+    padding: 2px;
+    width: 100px;
+}
+
+.i{
+    border: 2px solid brown;
+    width: 600px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+
+}
+
+.rr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.b{
+
+      border: 2px solid brown;
+      width: 70px;
+      border-radius: 5px;
+      margin-left: 15px;
+}
+/* Existing styles */
+.con {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 30px;
+    color: brown;
+    display: flex;
+    justify-content: center;
+}
+
+.ss {
+    margin-left: 100px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.sss {
+    border: 2px solid brown;
+    padding: 2px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sss:hover {
+    background-color: #f0e6d2; /* light hover effect */
+}
+
+/* Selected button style */
+.sss.selected {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.i {
+    border: 2px solid brown;
+    width: 600px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    color: black;
+}
+
+.rr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.b {
+    border: 2px solid brown;
+    width: 70px;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.b:hover {
+    background-color: brown;
+    color: white;
+}

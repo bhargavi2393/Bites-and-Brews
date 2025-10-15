@@ -1,0 +1,49 @@
+.c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h3{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.form{
+     
+    padding: 30px;
+    margin-top: 60px;
+    border: 2px solid brown;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    gap:10px
+
+    
+}
+.in{
+    border: 2px solid brown;
+    border-radius: 5px;
+}
+
+.btn {
+    
+    margin-top: 10px;
+    width: 70px;
+    align-self: center;
+    background-color: burlywood;
+}
+
+.msg {
+
+    color: brown;
+    display: flex;
+    justify-content: center;
+    border: 2px solid brown;
+    border-radius: 10px;
+    background-color: wheat;
+
+}
